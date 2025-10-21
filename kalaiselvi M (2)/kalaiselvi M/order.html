@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <script src="form.js"></script>
+    <a href="index.html" class="back-btn">←</a>
+
+    <div id="successMessage">Order Submitted Successfully!</div>
+     <div class="order-beg">
+    <div class="order-overlay"></div>
+ <section id="order-section">
+  <h2>Online Order For Coffee</h2>
+   <form id="orderForm">
+      <input type="text" name="name" placeholder="Your Name" required >
+      <input type="email" name="email" placeholder="Your Email" required >
+      <select name="coffee" required>
+        <option value="">Select Coffee</option>
+        <option value="hot">hot coffee</option>
+        <option value="clod">clod coffee</option>
+        <option value="Dessert">Dessert coffee</option>
+        <option value="Brewing">Brewing coffee</option>
+
+      </select>
+      <textarea name="message" rows="3" placeholder="Any Message?"></textarea>
+      <button type="submit">Submit</button>
+      <!-- <p id="successMessage">Order Submitted Successfully!</p> -->
+    </form>
+    <!-- <script src="form.js"></script> -->
+
+</section>
+</div>
+</body>
+</html>

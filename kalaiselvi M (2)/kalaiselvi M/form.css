@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  padding: 40px;
+}
+
+#order {
+  background-color: #fefefe;
+  padding: 30px 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#order h2 {
+  color: #4b2e2e;
+  margin-bottom: 20px;
+}
+
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#orderForm input,
+#orderForm select,
+#orderForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#orderForm button {
+  background-color: #4b2e2e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#orderForm button:hover {
+  background-color: #6b3e3e;
+}
+
+#successMessage {
+  color: green;
+  font-weight: bold;
+  display: none;
+  margin-top: 10px;
+}

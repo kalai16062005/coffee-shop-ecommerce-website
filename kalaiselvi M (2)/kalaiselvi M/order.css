@@ -1,0 +1,198 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #2f1e1e; 
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+}
+#successMessage {
+  display: none;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 999;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.order-beg {
+  position: relative;
+  background-image: url('./coffee.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.order-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+#order-section {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 40px 15px;
+  height: auto;
+  color: #fff;
+  z-index: 2;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#order-section h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#order-section label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#order-section input[type="text"],
+#order-section input[type="email"],
+#order-section input[type="tel"],
+#order-section select,
+#order-section textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #666;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+#order-section input::placeholder,
+#order-section textarea::placeholder,
+#order-section select::placeholder {
+  color: #bbb;
+}
+
+#order-section textarea {
+  height: 60px;
+  resize: vertical;
+}
+
+#order-section button[type="submit"] {
+  background-color: #ffcc00;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+#order-section button[type="submit"]:hover {
+  background-color: #e6b07d;
+}
+
+.btn {
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ffcc99;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #6F4E37;
+}
+
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#orderForm input,
+#orderForm select,
+#orderForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+} 
+
+
+#orderForm button {
+  background-color: #4b2e2e;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+}
+
+#orderForm button:hover {
+  background-color: #6b3e3e;
+}
+
+#successMessage {
+  color: green;
+  font-weight: bold;
+  display: none;
+  margin-top: 10px;
+}

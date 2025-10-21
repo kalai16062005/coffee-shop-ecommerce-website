@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Drip</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="Home">
+      <div class="container">
+        <header class="header">
+          <!-- <div class="title-icon">
+            <h2><i class="fas fa-mug-hot"></i>Daily Drip ☕</h2>
+          </div>
+          <nav class="nav">
+            <a href="#Home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#menu">MENU</a>
+           
+            <a href="#review">REVIEW</a>
+            <a href="#contact">CONTACT</a>
+
+          
+             <a href="order-details.html" class="nav-link order-link">
+    ORDER <span id="orderCount" class="badge">0</span>
+  </a>
+</a> 
+          </nav> -->
+
+          <div class="header">
+  <div class="title-icon">
+    <h2>Daily Drip</h2>
+  </div>
+
+  <!-- Hamburger button -->
+  <button class="nav-toggle" onclick="toggleNav()">☰</button>
+
+  <div class="nav" id="navbar">
+    <a href="#Home">HOME</a>
+    <a href="#About">ABOUT</a>
+    <a href="#menu">MENU</a>
+    <a href="#review">REVIEW</a>
+    <a href="#contact">CONTACT</a>
+    <a href="order.html" class="order-link" style="padding: 10px;">ORDER </a>
+      <!-- Order <span class="badge">1</span> -->
+   
+  </div>
+</div>
+        </header>
+
+  <script>
+  function toggleNav() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+  }
+</script>
+
+        <div class="hero-text">
+          <h3>Best Coffee</h3>
+          <h1>Make your day great with our special coffee!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            suscipit, est non tincidunt auctor, lacus lorem tincidunt est, sed
+            ornare nisi est vel ligula.
+          </p>
+          <div class="button">
+            <a href="order.html" class="btn">Order Now</a>
+            <!-- <button class="btns">Explore More</button> -->
+             <a href="gallery.html" class="btn">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-overlay"></div>
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="./coffee beans.png"
+            alt="coffee beans"
+            class="about-image"
+          />
+        </div>
+        <div class="about-content">
+          <h2>🔍 About</h2>
+          <div class="about-block">
+            <h3>📜 History</h3>
+            <p>
+              Coffee was first discovered in Ethiopia in the 9th century. Local
+              legends speak of a goat herder noticing the beans’ energy. Arab
+              traders soon embraced the drink, brewing it with tradition. From
+              there, it traveled to Europe and became a global favorite.
+            </p>
+          </div>
+          <div class="about-block">
+            <h3>🎯 Mission</h3>
+            <p>
+              We strive to deliver only the finest, ethically sourced coffee.
+              Each cup reflects care, quality, and sustainability. Our space is
+              crafted for comfort and connection. Every guest is welcomed with
+              warmth and respect.
+            </p>
+          </div>
+          <div class="about-block">
+            <h3>👁️ Vision</h3>
+            <p>
+              Our vision is to be a coffee brand cherished worldwide. We aim to
+              bring people together through every cup. Sustainability lies at
+              the heart of our mission. With every sip, we hope to uplift and
+              inspire.
+            </p>
+          </div>
+          <div class="about-block">
+            <h3>🤝 Team</h3>
+            <p>
+              Our team is built on passion, skill, and a love for coffee. From
+              baristas to roasters, every member brings dedication. We strive
+              for excellence in every cup we craft. Sustainability is the heart
+              of everything we do.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu" class="menu-section">
+      <div class="menu-overlay"></div>
+      <script src="menu.js"></script>
+
+      <h2 class="menu-heading">Menu Card</h2>
+
+      <!-- <div class="coffee-types">
+        <span>Hot Coffee</span>
+        <span>Clod Coffee</span>
+        <span>Dessert Coffee</span>
+        <span>Brewing Coffee</span>
+      </div> -->
+
+      <div class="category-buttons">
+        <button onclick="filterCards('all')">All</button>
+        <button onclick="filterCards('hot')">Hot Coffee</button>
+        <button onclick="filterCards('clod')">Clod Coffee</button>
+        <button onclick="filterCards('dessert')">Dessert Coffee</button>
+        <button onclick="filterCards('brewing')">Brewing Coffee</button>
+      </div>
+
+      <div class="card" tabindes="0" data-category="hot">
+        <img src="./espresso.jpg" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>
+          A strong, concentrated coffee made by forcing hot water through finely
+          ground beans.
+        </p>
+        <div class="stars">★★★★★<span>(4.9)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#espresso" class="more-btn">More</a>
+
+
+        <!-- <a href="#espresso-modal" class="more-btn">More</a> -->
+      </div>
+
+      <!-- <div class="card">
+    <img src="./americano.jpg" alt="Americano">
+    <h3>Americano </h3>
+    <p>Espresso diluted with hot water for a smooth, mild flavor.</p>
+    <div class="stars">
+      ★★★★★<span>(4.6)</span>
+ </div>
+ <button>More</button>
+   </div> -->
+      <div class="card" tabindes="0" data-category="hot">
+        <img src="./cappuccino.png" alt="cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>Espresso topped with equal parts steamed milk and milk foam.</p>
+        <div class="stars">★★★★★<span>(4.3)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#cappuccino" class="more-btn">More</a>
+      </div>
+      <div class="card" data-category="hot">
+        <img src="./latte.webp" alt="latte" />
+        <h3>Latte</h3>
+        <p>A creamy coffee made with espresso and plenty of steamed milk.</p>
+        <div class="stars">★★★★★<span>(4.8)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#latte" class="more-btn">More</a>
+      </div>
+      <div class="card" data-category="dessert">
+        <img src="./mocha.jpeg" alt="mocha" />
+        <h3>Mocha</h3>
+        <p>A sweet blend of espresso, steamed milk, and chocolate.</p>
+        <div class="stars">★★★★★<span>(4.5)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#mocha" class="more-btn">More</a>
+      </div>
+      <!-- <div class="card">
+    <img src="./macchiato.jpeg" alt="macchiato">
+    <h3>Macchiato </h3>
+    <p> Espresso with a small splash of milk or milk foam.</p>
+    <div class="stars">
+      ★★★★★<span>(4.9)</span>
+ </div>
+ <button>More</button>
+   </div> -->
+      <div class="card" data-category="hot">
+        <img src="./flat white.jpg" alt="flat white" />
+        <h3>Flat White</h3>
+        <p>Espresso with velvety microfoam milk, rich and smooth.</p>
+        <div class="stars">★★★★★<span>(4.8)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#flat white" class="more-btn">More</a>
+      </div>
+      <div class="card" data-category="brewing">
+        <img src="./cortado.jpg" alt="cortado" />
+        <h3>Cortado</h3>
+        <p>Equal parts espresso and steamed milk for a balanced taste.</p>
+        <div class="stars">★★★★★<span>(4.2)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#cortado" class="more-btn">More</a>
+      </div>
+      <div class="card" data-category="clod">
+        <img src="./cold brew.jpg" alt="cold brew" />
+        <h3>Cold Brew</h3>
+        <p>Coffee brewed cold for a smooth, less acidic flavor.</p>
+        <div class="stars">★★★★★<span>(4.5)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#cold brew" class="more-btn">More</a>
+      </div>
+      <div class="card" data-category="dessert">
+        <img src="./affogato.jpg" alt="affogato" />
+        <h3>Affogato</h3>
+        <p>A dessert drink with espresso poured over ice cream.</p>
+        <div class="stars">★★★★★<span>(4.9)</span></div>
+        <!-- <button>More</button> -->
+        <a href="coffeemenu.html#affogato" class="more-btn">More</a>
+      </div>
+    </section>
+    <section id="review" class="review-section">
+      <div class="review-overlay"></div>
+      <h2><i class="fas fa-star"></i> Customer Reviews</h2>
+      <!-- <input type="checkbox" id="toggle-reviews" hidden>
+  <label for="toggle-reviews" class="review-arrow">&#9654;</label> -->
+
+      <div class="review-container">
+        <div class="review-card">
+          <img src="./img 1.webp" alt="Claudine" class="review-img" />
+          <h3>eshita</h3>
+          <p class="date">August 27, 2024</p>
+          <p class="stars">★★★★★</p>
+          <p class="review-text">
+            Hands down the best mocha I’ve had! The blend of chocolate and
+            coffee was spot on — not too sweet, just right. It felt like dessert
+            and a pick-me-up all in one. Highly recommend!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <img src="./img 2.jpg" alt="Brian" class="review-img" />
+          <h3>inaya</h3>
+          <p class="date">August 8, 2024</p>
+          <p class="stars">★★★★★</p>
+          <p class="review-text">
+            The cappuccino was smooth and perfectly balanced between coffee and
+            foam. Loved the warm, cozy vibe it gave off. You can tell they use
+            quality beans and fresh milk — my go-to order now!
+          </p>
+        </div>
+
+        <div class="review-card">
+          <img src="./img 3.jpg" alt="Nicholas" class="review-img" />
+          <h3>ziya</h3>
+          <p class="date">July 31, 2024</p>
+          <p class="stars">★★★★☆</p>
+          <p class="review-text">
+            The espresso here is rich, bold, and full of character. It had the
+            perfect crema and a deep aroma that energized my morning. Absolutely
+            authentic — I could taste the craftsmanship in every sip.
+          </p>
+        </div>
+        <!-- <div class="review-card">
+      <img src="./img 5.jpg" alt="Nicholas" class="review-img">
+      <h3>nyra</h3>
+      <p class="date">July 31, 2020</p>
+      <p class="stars">★★★★☆</p>
+      <p class="review-text">The graphics are crisp, tagging helps categorize and filter reviews. Easy to use software.</p>
+    </div>
+     <div class="review-card">
+      <img src="./img 4.jpg" alt="Nicholas" class="review-img">
+      <h3>taraani</h3>
+      <p class="date">July 31, 2020</p>
+      <p class="stars">★★★★☆</p>
+      <p class="review-text">The graphics are crisp, tagging helps categorize and filter reviews. Easy to use software.</p>
+    </div> -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-overlay"></div>
+      <div class="contact-container">
+        <div class="contact-image">
+          <img src="./contact_us-removebg-preview.png" alt="contact us image" />
+        </div>
+        <div class="contact-details">
+          <h2>🌐 Contact</h2>
+          <p>
+            <strong>📍 Address:</strong><br />No. 45A, South Street, Madurai,
+            Tamil Nadu, India
+          </p>
+          <p><strong>📞 Phone:</strong><br />+91 98765 43210</p>
+          <p><strong>📩 Email:</strong><br />kalaiselvi22m.k@gmail.com</p>
+          <p>
+            <strong>🕘 Opening Time:</strong><br />Mon–Sun: 7:00 AM – 11:00 PM
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>COFFEE HUB</h3>
+            <p>
+              We brew more than just coffee – we brew emotions. Taste your
+              perfect cup here!
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#review">Review</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Our Specials</h3>
+            <ul>
+              <li>
+                <a href="#menu" onclick="filterCards('hot')">Hot Coffee</a>
+              </li>
+              <li>
+                <a href="#menu" onclick="filterCards('clod')">Cold Coffee</a>
+              </li>
+              <li>
+                <a href="#menu" onclick="filterCards('dessert')">Desserts</a>
+              </li>
+              <li>
+                <a href="#menu" onclick="filterCards('brewing')"
+                  >Brewing Magic</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>123 Coffee Street, Brew Town</p>
+            <p>📞 98765 43210</p>
+            <p>
+               <img src="./images/email-removebg-preview.png" alt="Mail Icon" style="width:16px; vertical-align:middle; margin-right:8px;">
+               <a href="https://mail.google.com/mail/?view=cm&to=kalaiselvi22m.k@gmail.com" target="_blank" style="color:#ccc; text-decoration:none;"></a>
+                kalaiselvi22m.k@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Designed by <span class="highlight">kalaiselvi</span></p>
+        </div>
+      </footer>
+    </section>
+
+<!-- <script>
+  const badge = document.getElementById("orderCount");
+  const order = JSON.parse(localStorage.getItem("userOrder"));
+
+  if (order) {
+    badge.textContent = 1;
+  } else {
+    badge.textContent = 0;
+  }
+</script> -->
+
+
+  </body>
+</html>
